@@ -32,7 +32,7 @@ issue_10 = Bunch(
     )
 
 issue_13 = Bunch(
-    vpath= '',
+    vpath= '/mnt/hdd1/ipcamera_case_data/N01-3F 05L F68-07 78.31 R11.12_202010292220.mp4',
     desc = '沒有bbox',
     video_len = None,
     )
