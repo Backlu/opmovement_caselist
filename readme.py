@@ -14,7 +14,7 @@ from casedict import get_issue_list#issue_dict, demo_case_dict
 issuelist = get_issue_list()
 table = []
 for k, case in issuelist.items():
-    table.append([k, case.desc, case.offlinevpath])
+    table.append([k, case.desc, case.vpath])
 
 issue_list_md = md_table(table)
 text_file = open('README.md', 'w')
