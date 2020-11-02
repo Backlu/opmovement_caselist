@@ -1,3 +1,5 @@
+import os 
+
 class Bunch(dict):
     def __init__(self, **kwargs):
         super().__init__(kwargs)
@@ -26,50 +28,50 @@ https://www.evernote.com/shard/s223/sh/00deb2de-8f67-4dc4-a62b-38db580a5a8d/ec34
 '''
 
 issue_10 = Bunch(
+    desc = '工作檯上有粉紅色PPEN2',    
     vpath='/mnt/hdd1/ipcamera_case_data/N01-3F 05L F68-06 78.26 R11.12_20201013210000-20201013211000_1.mp4',
-    desc = '工作檯上有粉紅色PPEN2',
     video_len = None,
     )
 
 issue_13 = Bunch(
+    desc = '沒有bbox',    
     vpath= '/mnt/hdd1/ipcamera_case_data/N01-3F 05L F68-07 78.31 R11.12_202010292220.mp4',
-    desc = '沒有bbox',
     video_len = None,
     )
 
 issue_14 = Bunch(
+    desc = 'Flash亮度逐漸變大',    
     vpath= '',
-    desc = 'Flash亮度逐漸變大',
     video_len = None,
     )
 
 issue_15 = Bunch(
+    desc = '誤判料盒為BBOX',    
     vpath= '',
-    desc = '誤判料盒為BBOX',
     video_len = None,
     )
 
 issue_16 = Bunch(
+    desc = '工具顏色亮度較暗',    
     vpath= '',
-    desc = '工具顏色亮度較暗',
     video_len = None,
     )
 
 issue_17 = Bunch(
+    desc = '手腕處的黃色手套誤偵測為為TZS',    
     vpath='/mnt/hdd1/ipcamera_case_data/N01-3F 05L F68-01 78.69 R11.12_20201017093200-20201017093700_1.mp4',
-    desc = '手腕處的黃色手套誤偵測為為TZS',
     video_len = None,
     )
 
 issue_18 = Bunch(
+    desc = '工具被手遮擋, 無法用顏色辨識',    
     vpath= '',
-    desc = '工具被手遮擋, 無法用顏色辨識',
     video_len = None,
     )
 
 issue_19 = Bunch(
+    desc = '頭套誤判為閃光',    
     vpath='',
-    desc = '頭套誤判為閃光',
     video_len = None,
     )
 
@@ -88,7 +90,8 @@ def get_issue_list(echo=True):
     if echo:
         print('\n---- issue list ---\n')
         for k in issue_dict.keys():
-            print(f'{k}:', issue_dict.get(k).desc)
+            issue = issue_dict.get(k)
+            print(f'{k}:', issue.desc, f'({os.path.basename(issue.vpath)})')
     return issue_dict
 
 
@@ -98,8 +101,8 @@ def get_issue_list(echo=True):
 '''
 
 demo_1 = Bunch(
+    desc = '跳過工序5',    
     vpath='/mnt/hdd1/ipcamera_case_data/output/N01-3F 05L F68-02 78.42 R11.12_202010290833.mp4',
-    desc = '跳過工序5',
     video_len = None,
     )
 
