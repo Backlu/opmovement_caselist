@@ -13,6 +13,7 @@ from casedict import get_issue_list#issue_dict, demo_case_dict
 
 issuelist = get_issue_list()
 table = []
+table.append(['Issue#','Description','video path'])
 for k, case in issuelist.items():
     table.append([k, case.desc, case.vpath])
 
