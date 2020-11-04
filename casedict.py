@@ -75,6 +75,12 @@ issue_19 = Bunch(
     video_len = None,
     )
 
+issue_999 = Bunch(
+    desc = 'HMM測試',    
+    vpath='/mnt/hdd1/ipcamera_case_data/N01-3F 05L F68-06 78.26 R11.12_20201029212015-20201029222015_14.mp4',
+    video_len = None,
+    )
+
 issue_dict = {
     'issue_10': issue_10,
     'issue_13': issue_13,
@@ -83,7 +89,8 @@ issue_dict = {
     'issue_16': issue_16,
     'issue_17': issue_17,    
     'issue_18': issue_18,    
-    'issue_19': issue_19
+    'issue_19': issue_19,
+    'issue_999': issue_999
 }
 
 def get_issue_list(echo=True):
