@@ -29,7 +29,7 @@ https://www.evernote.com/shard/s223/sh/00deb2de-8f67-4dc4-a62b-38db580a5a8d/ec34
 
 issue_10 = Bunch(
     desc = '工作檯上有粉紅色PPEN2',    
-    vpath='/mnt/hdd1/ipcamera_case_data/N01-3F 05L F68-06 78.26 R11.12_20201013210000-20201013211000_1.mp4',
+    vpath= '/mnt/hdd1/ipcamera_case_data/N01-3F 05L F68-06 78.26 R11.12_20201013210000-20201013211000_1.mp4',
     video_len = None,
     )
 
@@ -40,8 +40,8 @@ issue_13 = Bunch(
     )
 
 issue_14 = Bunch(
-    desc = 'Flash亮度逐漸變大',    
-    vpath= '',
+    desc = 'Flash亮度受現場燈光影響變大變小',    
+    vpath= '/mnt/hdd1/ipcamera_case_data/N01-3F 05L F68-06 78.26 R11.12_20201029212015-20201029222015_14.mp4',
     video_len = None,
     )
 
@@ -75,6 +75,18 @@ issue_19 = Bunch(
     video_len = None,
     )
 
+issue_20 = Bunch(
+    desc = '左手作業',    
+    vpath= '/mnt/hdd1/ipcamera_case_data/N01-3F 05L F68-07 78.31 R11.12_20201102132200-20201102132700_20.mp4',
+    video_len = None,
+    )
+
+issue_21 = Bunch(
+    desc = '雙手作業',    
+    vpath= '/mnt/hdd1/ipcamera_case_data/N01-3F 05L F68-07 78.31 R11.12_20201102131100-20201102131600_21.mp4',
+    video_len = None,
+    )
+
 issue_dict = {
     'issue_10': issue_10,
     'issue_13': issue_13,
@@ -83,7 +95,9 @@ issue_dict = {
     'issue_16': issue_16,
     'issue_17': issue_17,    
     'issue_18': issue_18,    
-    'issue_19': issue_19
+    'issue_19': issue_19,
+    'issue_20': issue_20,    
+    'issue_21': issue_21,    
 }
 
 def get_issue_list(echo=True):
