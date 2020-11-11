@@ -87,6 +87,14 @@ issue_21 = Bunch(
     video_len = None,
     )
 
+issue_22 = Bunch(
+    desc = '沒有BBOX(靠近頭套)',    
+    vpath= '/mnt/hdd1/ipcamera_case_data/N01-3F 05L F68-05 78.30 R11.12_202011091020.mp4',
+    video_len = None,
+    )
+
+
+
 issue_999 = Bunch(
     desc = 'HMM MODELING',    
     vpath='/mnt/hdd1/ipcamera_case_data/N01-3F 05L F68-06 78.26 R11.12_20201029212015-20201029222015_14.mp4',
@@ -104,6 +112,7 @@ issue_dict = {
     'issue_19': issue_19,
     'issue_20': issue_20,    
     'issue_21': issue_21,
+    'issue_22': issue_22,
     'issue_999': issue_999
 }
 
